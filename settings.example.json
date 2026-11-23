@@ -1,0 +1,29 @@
+{
+  "trigger_phrase": "trigger phrase",
+  "trigger_case_sensitive": false,
+  "remove_trigger_on_accept": true,
+
+  "api_base_url": "http://127.0.0.1:8080/v1",
+  "api_key": "",
+  "api_mode": "chat",
+  "model": "local-model",
+  "max_tokens": 200,
+  "temperature": 0.7,
+  "stop": [],
+  "thinking": false,
+  "thinking_off_body": {"chat_template_kwargs": {"enable_thinking": false}},
+  "extra_body": {},
+  "request_timeout_seconds": 120,
+
+  "context_chars_before": 6000,
+  "context_chars_after": 500,
+  "user_prompt_template": "<document>\n{before}<CURSOR>{after}\n</document>\n\nWrite the text to insert at <CURSOR>.",
+  "completion_prompt_template": "{before}",
+  "strip_think_tags": true,
+
+  "log_file": "triggercomplete.log",
+  "log_level": "info",
+
+  "server_command": "",
+  "server_log_file": "server.log"
+}

@@ -1,0 +1,7 @@
+dist/
+__pycache__/
+*.log
+server.json*
+settings.json
+tmp/
+SYSTEM.md
